@@ -1,0 +1,60 @@
+:root {
+  --default-font: 'Roboto', sans-serif;
+  --background-color: #282a36;
+  --primary-color: #775ae6;
+  --color-text: #ffffff;
+  --secondary-text: #04d361;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.description {
+  color: var(--color-text);
+  text-align: center;
+  width: 80%;
+
+  font-size: 1.3rem;
+}
+
+.description strong {
+  color: var(--secondary-text);
+}
+
+.title,
+.description,
+button {
+  margin-bottom: 2rem;
+}
+
+button{
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  color: var(--color-text);
+  background-color: var(--primary-color);
+  min-width: 8rem;  
+  cursor: pointer;
+}
+
+.start-test{
+  background-color: var(--secondary-text);
+  color: #000000;
+}
